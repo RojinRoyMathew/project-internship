@@ -1,0 +1,99 @@
+/* Wrapper for the full section */
+.homepage-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* The sliding container */
+.carousel-track {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  animation: slideScroll 30s linear infinite;
+}
+
+/* Individual image slide */
+.carousel-slide {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.image-1 {
+  background-image: url('home.jpg');
+}
+
+.image-2 {
+  background-image: url('home1.jpg');
+}
+
+/* Dark overlay with blend */
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+/* Dynamic welcome + quote */
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+  padding: 1rem 2rem;
+  max-width: 90%;
+}
+
+.carousel-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.carousel-content p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+/* Keyframe for infinite left scroll */
+@keyframes slideScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade-in effect for text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional responsiveness */
+@media (max-width: 768px) {
+  .carousel-content h1 {
+    font-size: 1.75rem;
+  }
+  .carousel-content p {
+    font-size: 1rem;
+  }
+}
