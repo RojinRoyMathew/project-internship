@@ -31,7 +31,7 @@ To run this project locally:
 
 ✅ Feature Section
 
-(Upload screenshots inside a folder called screenshots/ in your repo)
+(Upload screenshots inside a folder called image/ in your repo)
 
 🎥 Demo Video
 Loom Video Walkthrough: https://www.loom.com/share/31009b0d06a7415a8e7a1d3f389f4920?sid=4effe6f6-bce7-4c70-acd1-6e017167b720
