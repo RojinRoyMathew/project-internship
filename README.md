@@ -10,7 +10,7 @@ This is my internship project submitted to **Etailed Digital Services Pvt. Ltd.*
 
 - **React JS**
 - **HTML5**
-- **CSS3 (Basic Styling)**
+- **CSS3**
 - **Visual Studio Code (VS Code)**
 
 ---
